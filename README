@@ -1,7 +1,7 @@
-bitcoin-seeder
+crown-seeder
 ==============
 
-Bitcoin-seeder is a crawler for the Bitcoin network, which exposes a list
+Crown-seeder is a crawler for the Crown network, which exposes a list
 of reliable nodes via a built-in DNS server.
 
 Features:
