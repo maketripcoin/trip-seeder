@@ -10,7 +10,7 @@
 #include <unistd.h>
 #include <atomic>
 
-#include "bitcoin.h"
+#include "crown.h"
 #include "db.h"
 
 using namespace std;
@@ -401,7 +401,7 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"crw.infernpool.com", ""};
+static const string mainnet_seeds[] = {"crw.infernpool.com", "127.0.0.1", "188.166.223.93", ""};
 static const string testnet_seeds[] = {""};
 static const string *seeds = mainnet_seeds;
 
