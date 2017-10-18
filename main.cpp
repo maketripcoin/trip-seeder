@@ -407,7 +407,7 @@ static const string mainnet_seeds[] = {"nyc-crwseed.infernpool.com",
                                        "blr-crwdns.infernpool.com",
                                        "sgp-crwdns.infernpool.com",
                                        "127.0.0.1", ""};
-static const string testnet_seeds[] = {""};
+static const string testnet_seeds[] = {"127.0.0.1", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
@@ -464,10 +464,11 @@ int main(int argc, char **argv) {
   bool fDNS = true;
   if (opts.fUseTestNet) {
       printf("Using testnet.\n");
-      pchMessageStart[0] = 0x0c;
-      pchMessageStart[1] = 0x17;
-      pchMessageStart[2] = 0x0f;
-      pchMessageStart[3] = 0x05;
+      pchMessageStart[0] = 0x0f;
+      pchMessageStart[1] = 0x18;
+      pchMessageStart[2] = 0x0e;
+      pchMessageStart[3] = 0x06;
+      unsigned char pchMessageStart[4] = { 0x0f, 0x18, 0x0e, 0x06 };
       seeds = testnet_seeds;
       fTestNet = true;
   }
