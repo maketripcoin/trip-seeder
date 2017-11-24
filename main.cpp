@@ -401,13 +401,25 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"nyc-crwseed.crowndns.info",
+static const string mainnet_seeds[] = {"nyc-crwdns.crowndns.info",
                                        "lon-crwdns.crowndns.info",
                                        "fra-crwdns.crowndns.info",
                                        "blr-crwdns.crowndns.info",
                                        "sgp-crwdns.crowndns.info",
+                                       "ams-crwdns.crowndns.info",
+                                       "sfo-crwdns.crowndns.info",
+                                       "tor-crwdns.crowndns.info",
                                        "127.0.0.1", ""};
-static const string testnet_seeds[] = {"127.0.0.1", ""};
+static const string testnet_seeds[] = {
+                                       "nyc-testnet-crwdns.crowndns.info",
+                                       "lon-testnet-crwdns.crowndns.info",
+                                       "blr-testnet-crwdns.crowndns.info",
+                                       "sgp-testnet-crwdns.crowndns.info",
+                                       "ams-testnet-crwdns.crowndns.info",
+                                       "sfo-testnet-crwdns.crowndns.info",
+                                       "tor-testnet-crwdns.crowndns.info",
+                                       "fra-testnet-crwdns.crowndns.info",
+                                       "127.0.0.1", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
