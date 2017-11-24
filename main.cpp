@@ -401,11 +401,11 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"nyc-crwseed.infernpool.com",
-                                       "lon-crwdns.infernpool.com",
-                                       "fra-crwdns.infernpool.com",
-                                       "blr-crwdns.infernpool.com",
-                                       "sgp-crwdns.infernpool.com",
+static const string mainnet_seeds[] = {"nyc-crwseed.crowndns.info",
+                                       "lon-crwdns.crowndns.info",
+                                       "fra-crwdns.crowndns.info",
+                                       "blr-crwdns.crowndns.info",
+                                       "sgp-crwdns.crowndns.info",
                                        "127.0.0.1", ""};
 static const string testnet_seeds[] = {"127.0.0.1", ""};
 static const string *seeds = mainnet_seeds;
