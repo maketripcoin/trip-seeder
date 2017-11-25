@@ -409,6 +409,14 @@ static const string mainnet_seeds[] = {"nyc-crwdns.crowndns.info",
                                        "ams-crwdns.crowndns.info",
                                        "sfo-crwdns.crowndns.info",
                                        "tor-crwdns.crowndns.info",
+                                       "nyc-crwdns.infernopool.com",
+                                       "lon-crwdns.infernopool.com",
+                                       "fra-crwdns.infernopool.com",
+                                       "blr-crwdns.infernopool.com",
+                                       "sgp-crwdns.infernopool.com",
+                                       "ams-crwdns.infernopool.com",
+                                       "sfo-crwdns.infernopool.com",
+                                       "tor-crwdns.infernopool.com",
                                        "127.0.0.1", ""};
 static const string testnet_seeds[] = {
                                        "nyc-testnet-crwdns.crowndns.info",
@@ -419,6 +427,14 @@ static const string testnet_seeds[] = {
                                        "sfo-testnet-crwdns.crowndns.info",
                                        "tor-testnet-crwdns.crowndns.info",
                                        "fra-testnet-crwdns.crowndns.info",
+                                       "nyc-testnet-crwdns.infernopool.com",
+                                       "lon-testnet-crwdns.infernopool.com",
+                                       "blr-testnet-crwdns.infernopool.com",
+                                       "sgp-testnet-crwdns.infernopool.com",
+                                       "ams-testnet-crwdns.infernopool.com",
+                                       "sfo-testnet-crwdns.infernopool.com",
+                                       "tor-testnet-crwdns.infernopool.com",
+                                       "fra-testnet-crwdns.infernopool.com",
                                        "127.0.0.1", ""};
 static const string *seeds = mainnet_seeds;
 
