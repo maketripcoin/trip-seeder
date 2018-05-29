@@ -1,7 +1,7 @@
-crown-seeder
+deviant-seeder
 ==============
 
-Crown-seeder is a crawler for the Crown network, which exposes a list
+Deviant-seeder is a crawler for the Deviant network, which exposes a list
 of reliable nodes via a built-in DNS server.
 
 Features:
