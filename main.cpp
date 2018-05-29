@@ -10,7 +10,7 @@
 #include <unistd.h>
 #include <atomic>
 
-#include "crown.h"
+#include "deviantcoin.h"
 #include "db.h"
 
 using namespace std;
@@ -401,46 +401,21 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"nyc-crwdns.crowndns.info",
-                                       "lon-crwdns.crowndns.info",
-                                       "fra-crwdns.crowndns.info",
-                                       "blr-crwdns.crowndns.info",
-                                       "sgp-crwdns.crowndns.info",
-                                       "ams-crwdns.crowndns.info",
-                                       "sfo-crwdns.crowndns.info",
-                                       "tor-crwdns.crowndns.info",
-                                       "nyc-crwdns.infernopool.com",
-                                       "lon-crwdns.infernopool.com",
-                                       "fra-crwdns.infernopool.com",
-                                       "blr-crwdns.infernopool.com",
-                                       "sgp-crwdns.infernopool.com",
-                                       "ams-crwdns.infernopool.com",
-                                       "sfo-crwdns.infernopool.com",
-                                       "tor-crwdns.infernopool.com",
+static const string mainnet_seeds[] = {"seed1.deviantcoin.io",
+                                       "seed2.deviantcoin.io",
+                                       "seed3.deviantcoin.io",
+                                       "seed4.deviantcoin.io",
+                                       "seed5.deviantcoin.io",
+                                       "seed6.deviantcoin.io",
+                                       "seed7.deviantcoin.io",
                                        "127.0.0.1", ""};
 static const string testnet_seeds[] = {
-                                       "nyc-testnet-crwdns.crowndns.info",
-                                       "lon-testnet-crwdns.crowndns.info",
-                                       "blr-testnet-crwdns.crowndns.info",
-                                       "sgp-testnet-crwdns.crowndns.info",
-                                       "ams-testnet-crwdns.crowndns.info",
-                                       "sfo-testnet-crwdns.crowndns.info",
-                                       "tor-testnet-crwdns.crowndns.info",
-                                       "fra-testnet-crwdns.crowndns.info",
-                                       "nyc-testnet-crwdns.infernopool.com",
-                                       "lon-testnet-crwdns.infernopool.com",
-                                       "blr-testnet-crwdns.infernopool.com",
-                                       "sgp-testnet-crwdns.infernopool.com",
-                                       "ams-testnet-crwdns.infernopool.com",
-                                       "sfo-testnet-crwdns.infernopool.com",
-                                       "tor-testnet-crwdns.infernopool.com",
-                                       "fra-testnet-crwdns.infernopool.com",
                                        "127.0.0.1", ""};
 static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 9340), true);
+    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 7118), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
