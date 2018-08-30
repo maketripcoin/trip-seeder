@@ -401,13 +401,13 @@ extern "C" void* ThreadStats(void*) {
   return nullptr;
 }
 
-static const string mainnet_seeds[] = {"seed1.deviantcoin.io",
-                                       "seed2.deviantcoin.io",
-                                       "seed3.deviantcoin.io",
-                                       "seed4.deviantcoin.io",
-                                       "seed5.deviantcoin.io",
-                                       "seed6.deviantcoin.io",
-                                       "seed7.deviantcoin.io",
+static const string mainnet_seeds[] = {"dns1.tripcoin.live",
+                                       "dns2.tripcoin.live",
+                                       "dns3.tripcoin.live",
+                                       "dns4.tripcoin.live",
+                                       "dns5.tripcoin.live",
+                                       "dns6.tripcoin.live",
+                                       "dns7.tripcoin.live",
                                        "127.0.0.1", ""};
 static const string testnet_seeds[] = {
                                        "127.0.0.1", ""};
@@ -415,7 +415,7 @@ static const string *seeds = mainnet_seeds;
 
 extern "C" void* ThreadSeeder(void*) {
   if (!fTestNet){
-    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 22618), true);
+    db.Add(CService("kjy2eqzk4zwi5zd3.onion", 40500), true);
   }
   do {
     for (int i=0; seeds[i] != ""; i++) {
