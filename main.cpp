@@ -10,7 +10,7 @@
 #include <unistd.h>
 #include <atomic>
 
-#include "deviantcoin.h"
+#include "trip.h"
 #include "db.h"
 
 using namespace std;
